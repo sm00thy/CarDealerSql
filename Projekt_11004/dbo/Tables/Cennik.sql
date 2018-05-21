@@ -1,15 +1,13 @@
-﻿CREATE TABLE Cennik
-(
-			CenaId		INT			NOT NULL	IDENTITY(1,1)	PRIMARY KEY		
-		,	ModelId		INT			NOT NULL	
-		,	Cena		MONEY		NOT NULL	CHECK(Cena > 0)
-		,	DataOd		DATE					CHECK(DataOd <= GETDATE())
-		,	DataDo		DATE					CHECK(DataDo <= GETDATE())
-)
+﻿CREATE TABLE [dbo].[Cennik] (
+    [CenaId]  INT   IDENTITY (1, 1) NOT NULL,
+    [ModelId] INT   NOT NULL,
+    [Cena]    MONEY NOT NULL,
+    [DataOd]  DATE  NULL,
+    [DataDo]  DATE  NULL,
+    PRIMARY KEY CLUSTERED ([CenaId] ASC),
+    CHECK ([Cena]>(0)),
+    CHECK ([DataDo]<=getdate()),
+    CHECK ([DataOd]<=getdate()),
+    CONSTRAINT [ModelId_Cennik_Modele] FOREIGN KEY ([ModelId]) REFERENCES [dbo].[Modele] ([ModelId])
+);
 
-
-GO
-ALTER TABLE			Cennik
-ADD CONSTRAINT		ModelId_Cennik_Modele
-FOREIGN KEY			(ModelId)
-REFERENCES			Modele(ModelId)

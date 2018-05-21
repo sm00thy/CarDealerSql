@@ -59,11 +59,17 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts\" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
-    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Projekt_11004.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Cennik.sql" />
@@ -73,13 +79,9 @@
     <Build Include="dbo\Tables\Pracownik.sql" />
     <Build Include="dbo\Tables\Zamowienia.sql" />
     <Build Include="dbo\Views\MarkiZamowieniaSprzedaz.sql" />
-    <Build Include="dbo\Views\ZamowieniaRabat.sql" />
     <Build Include="dbo\Views\NieSprzedaneModele.sql" />
     <Build Include="dbo\Views\PracownicyZamowienia.sql" />
+    <Build Include="dbo\Views\ZamowieniaRabat.sql" />
     <Build Include="Security\raporty.sql" />
-    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Projekt_11004.publish.xml" />
   </ItemGroup>
 </Project>

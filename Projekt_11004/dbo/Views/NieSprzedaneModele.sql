@@ -10,4 +10,3 @@ FROM
 	INNER JOIN	dbo.Marki as Ma	ON	Ma.MarkaId = Mo.MarkaId
 WHERE
 		Za.ModelId != Mo.ModelId
-		

@@ -19,4 +19,3 @@ FROM
 	,	Pr.Nazwisko
 	,	Pr.Pesel
 	,	Pr.Plec
-
