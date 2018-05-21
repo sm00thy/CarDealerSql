@@ -63,6 +63,8 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
+    <Folder Include="raporty\" />
+    <Folder Include="raporty\Views\" />
     <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +81,14 @@
     <Build Include="dbo\Tables\Pracownik.sql" />
     <Build Include="dbo\Tables\Zamowienia.sql" />
     <Build Include="dbo\Views\MarkiZamowieniaSprzedaz.sql" />
+    <Build Include="dbo\Views\ZamowieniaRabat.sql" />
     <Build Include="dbo\Views\NieSprzedaneModele.sql" />
     <Build Include="dbo\Views\PracownicyZamowienia.sql" />
-    <Build Include="dbo\Views\ZamowieniaRabat.sql" />
+    <Build Include="raporty\Views\zad1.sql" />
+    <Build Include="raporty\Views\NieSprzedaneModele.sql" />
+    <Build Include="raporty\Views\PracownicyZamowienia.sql" />
+    <Build Include="raporty\Views\ZamowieniaRabat.sql" />
+    <Build Include="raporty\Views\MarkiZamowieniaSprzedaz.sql" />
     <Build Include="Security\raporty.sql" />
   </ItemGroup>
 </Project>

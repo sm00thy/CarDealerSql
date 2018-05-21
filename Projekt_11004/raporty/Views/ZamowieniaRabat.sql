@@ -1,5 +1,4 @@
-﻿
-CREATE VIEW ZamowieniaRabat AS
+﻿CREATE VIEW raporty.ZamowieniaRabat AS
 SELECT
 				Za.ZamowienieId
 			,	Za.KlientId
@@ -18,4 +17,5 @@ FROM
 GROUP BY
 		CenaSprzedazy, Cena, ZamowienieId, KlientId, 
 		Za.ModelId, Za.PracownikId, Za.StanPlatnosci, Za.StanRealizacji,
-		Za.DataZamowienia, Za.DataPlanowanegoOdbioru
+Za.DataZamowienia, Za.DataPlanowanegoOdbioru
+

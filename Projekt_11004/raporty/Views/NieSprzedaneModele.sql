@@ -1,5 +1,4 @@
-﻿
-CREATE VIEW NieSprzedaneModele AS
+﻿CREATE VIEW raporty.NieSprzedaneModele AS
 
 SELECT 
 				Ma.Marka
@@ -9,5 +8,5 @@ FROM
 	INNER JOIN	dbo.Modele as Mo ON Mo.ModelId = Za.ModelId
 	INNER JOIN	dbo.Marki as Ma	ON	Ma.MarkaId = Mo.MarkaId
 WHERE
-		Za.ModelId != Mo.ModelId
-		
+Za.ModelId != Mo.ModelId
+

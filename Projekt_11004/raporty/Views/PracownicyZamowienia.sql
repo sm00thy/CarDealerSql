@@ -1,5 +1,4 @@
-﻿
-CREATE VIEW PracownicyZamowienia AS
+﻿CREATE VIEW raporty.PracownicyZamowienia AS
 
 SELECT 
 		Pr.PracownikId
@@ -18,5 +17,5 @@ FROM
 	,	Pr.Imie
 	,	Pr.Nazwisko
 	,	Pr.Pesel
-	,	Pr.Plec
+, Pr.Plec
 
