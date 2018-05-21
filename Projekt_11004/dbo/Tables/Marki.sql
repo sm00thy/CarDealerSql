@@ -1,9 +1,8 @@
-﻿CREATE TABLE [dbo].[Marki] (
-    [MarkaId]   INT          IDENTITY (1, 1) NOT NULL,
-    [Marka]     VARCHAR (50) NOT NULL,
-    [Kraj]      VARCHAR (20) NOT NULL,
-    [Kontynent] VARCHAR (20) NOT NULL,
-    PRIMARY KEY CLUSTERED ([MarkaId] ASC),
-    UNIQUE NONCLUSTERED ([Marka] ASC)
-);
+﻿CREATE TABLE Marki 
+(
+		MarkaId		INT			NOT NULL	IDENTITY(1,1) PRIMARY KEY
+	,	Marka		VARCHAR(50)	NOT NULL	UNIQUE
+	,	Kraj		VARCHAR(20)	NOT NULL	
+	,	Kontynent	VARCHAR(20)	NOT NULL	
+)
 
